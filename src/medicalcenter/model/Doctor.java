@@ -10,7 +10,7 @@ import medicalcenter.interfaces.CanRemitPatientToOtherCenter;
 import medicalcenter.interfaces.CanRemitPatientToSpecialist;
 import medicalcenter.util.Arrays;
 
-public abstract class Doctor<S extends MedicalService<? extends Doctor<? super S>>>
+public abstract class Doctor<S extends MedicalService<? extends Doctor>>
 		extends MedicalEmployee
 		implements CanRemitPatientToSpecialist, CanRemitPatientToOtherCenter
 {

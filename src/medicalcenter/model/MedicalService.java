@@ -14,7 +14,7 @@ import medicalcenter.interfaces.DoctorFindable;
 import medicalcenter.interfaces.DoctorListable;
 import medicalcenter.util.DuplicateElementException;
 
-public abstract class MedicalService<D extends Doctor<? extends MedicalService<? super D>>>
+public abstract class MedicalService<D extends Doctor<? extends MedicalService>>
 		implements DoctorFindable, DoctorListable
 {
 	public static final Function<Class<?>, String> MEDICAL_SERVICE_NAME_MAPPER = (Class<?> type) -> {
